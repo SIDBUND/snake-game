@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Snake Game</title>
+    <style>
+      body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0; /* Lighter background for the whole page */
+}
+
+canvas {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); /* Gradient background */
+  border: 5px solid #3e3e3e; /* Darker border */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Add shadow for depth */
+}
+
+
+#score {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: #ffffff; /* White color for the score text */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  padding: 5px 10px;
+  border-radius: 5px; /* Rounded corners */
+  font-family: 'Arial', sans-serif; /* Change font */
+  box-shadow: 0 0 5px rgba(0,0,0,0.5); /* Add shadow for depth */
+}
+    </style>
+  </head>
+  <body>
+    <div id="score">Score: 0</div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <script src="snake.js"></script>
+  </body>
+</html>
